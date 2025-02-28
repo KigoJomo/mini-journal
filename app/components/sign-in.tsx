@@ -1,7 +1,6 @@
 "use client"
 
 import { signIn } from 'next-auth/react';
-import "@material/web"
 
 export default function SignIn() {
   return (
@@ -11,9 +10,7 @@ export default function SignIn() {
         onClick={() => signIn('github')}
         aria-label="Sign in with GitHub">
         Sign in with GitHub
-      </button>
-
-      
+      </button>      
     </>
   );
 }
